@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The SF Sanctuary | Elite Trans-Centric Bodywork</title>
+    <style>
+        :root {
+            --gold: #c5a059;
+            --charcoal: #121212;
+            --soft-white: #e0e0e0;
+            --accent-red: #4a0e0e;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--charcoal);
+            color: var(--soft-white);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1500&q=80'); /* Placeholder for SF Skyline */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 4px;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Call to Action */
+        .cta-button {
+            padding: 15px 40px;
+            background-color: transparent;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            text-decoration: none;
+            transition: 0.4s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .cta-button:hover {
+            background-color: var(--gold);
+            color: black;
+            box-shadow: 0 0 15px var(--gold);
+        }
+
+        /* Services Grid */
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--gold);
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #1a1a1a;
+            padding: 30px;
+            border: 1px solid #333;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: var(--gold);
+            margin-top: 0;
+        }
+
+        /* Mood Selector */
+        .mood-box {
+            background: var(--accent-red);
+            padding: 40px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #666;
+            border-top: 1px solid #333;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The SF Sanctuary</h1>
+        <p class="tagline">Exquisite Sensual Artistry in the Heart of the Bay</p>
+        <a href="#booking" class="cta-button">Enter the Experience</a>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Curated Rituals</h2>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>The Velvet Melt</h3>
+                <p>A slow-motion journey focusing on skin-to-skin contact and deep relaxation. Designed to quiet the mind and wake the senses.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Electric Bay</h3>
+                <p>Playful, upbeat, and spirited. This session is about high energy, laughter, and a spirited connection that leaves you glowing.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Midnight Noir</h3>
+                <p>Our most exclusive, elite offering. A customized, long-form experience for the refined seeker who desires total immersion.</p>
+            </div>
+        </div>
+
+        <div class="mood-box">
+            <h2 style="color: var(--gold);">Choose Your Vibe</h2>
+            <p>Whether you seek a quiet escape from Silicon Valley or an adventurous afternoon in the city, the journey is yours to define.</p>
+        </div>
+    </div>
+
+    <footer id="booking">
+        <p>Discretion Assured. Elite Clientele Only.</p>
+        <p>San Francisco • Oakland • San Jose</p>
+        <p>&copy; 2026 The SF Sanctuary</p>
+    </footer>
+
+</body>
+</html>
