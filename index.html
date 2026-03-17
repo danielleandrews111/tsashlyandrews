@@ -3,57 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TsAshlyAndrews | Elite Wellness Agency</title>
+    <title>The SF Sanctuary | Elite Trans-Centric Bodywork</title>
     <style>
-        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; margin: 0; color: #1a202c; background: #f7fafc; }
-        header { background: #1a202c; color: white; padding: 3.5rem 1rem; text-align: center; border-bottom: 5px solid #48bb78; }
-        .container { max-width: 800px; margin: auto; padding: 2rem; }
-        .card { background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); margin-bottom: 2.5rem; border: 1px solid #e2e8f0; }
-        h1 { margin: 0; font-size: 2.5rem; text-transform: uppercase; letter-spacing: 2px; }
-        h2 { color: #2d3748; border-left: 5px solid #48bb78; padding-left: 15px; margin-top: 0; }
-        .cta-button { display: block; width: 100%; background: #48bb78; color: white; text-align: center; padding: 1.2rem; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 1.1rem; margin-top: 25px; transition: background 0.3s; box-sizing: border-box; }
-        .cta-button:hover { background: #38a169; }
-        .benefits { margin: 1.5rem 0; padding: 0; list-style: none; }
-        .benefits li { background: #f0fff4; margin-bottom: 10px; padding: 10px 15px; border-radius: 8px; font-size: 0.95rem; }
-        footer { text-align: center; font-size: 0.85rem; color: #a0aec0; padding: 3rem; }
+        :root {
+            --gold: #c5a059;
+            --charcoal: #121212;
+            --soft-white: #e0e0e0;
+            --accent-red: #4a0e0e;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--charcoal);
+            color: var(--soft-white);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1500&q=80'); /* Placeholder for SF Skyline */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        h1 {
+            font-size: 3rem;
+            letter-spacing: 4px;
+            color: var(--gold);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Call to Action */
+        .cta-button {
+            padding: 15px 40px;
+            background-color: transparent;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            text-decoration: none;
+            transition: 0.4s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .cta-button:hover {
+            background-color: var(--gold);
+            color: black;
+            box-shadow: 0 0 15px var(--gold);
+        }
+
+        /* Services Grid */
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--gold);
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #1a1a1a;
+            padding: 30px;
+            border: 1px solid #333;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            color: var(--gold);
+            margin-top: 0;
+        }
+
+        /* Mood Selector */
+        .mood-box {
+            background: var(--accent-red);
+            padding: 40px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #666;
+            border-top: 1px solid #333;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>TsAshlyAndrews</h1>
-    <p>Premium Wellness Agency & Concierge Management</p>
-</header>
+    <header>
+        <h1>The SF Sanctuary</h1>
+        <p class="tagline">Exquisite Sensual Artistry in the Heart of the Bay</p>
+        <a href="#booking" class="cta-button">Enter the Experience</a>
+    </header>
 
-<div class="container">
-    <div class="card">
-        <h2>Partner Program</h2>
-        <p>Focus on your craft while we handle the logistics. We provide a secure bridge between elite therapists and verified clients.</p>
-        <ul class="benefits">
-            <li>✅ <strong>Full Identity Vetting:</strong> Every client is screened before booking.</li>
-            <li>✅ <strong>Marketing & Ads:</strong> We drive the traffic; you fill your schedule.</li>
-            <li>✅ <strong>Safety First:</strong> Your personal information remains private.</li>
-        </ul>
-        <a href="https://wa.me/415-215-8598?text=I'm%20a%20therapist%20interested%20in%20joining%20TsAshlyAndrews" class="cta-button">Apply to Join the Agency</a>
+    <div class="container">
+        <h2 class="section-title">Curated Rituals</h2>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>The Velvet Melt</h3>
+                <p>A slow-motion journey focusing on skin-to-skin contact and deep relaxation. Designed to quiet the mind and wake the senses.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Electric Bay</h3>
+                <p>Playful, upbeat, and spirited. This session is about high energy, laughter, and a spirited connection that leaves you glowing.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Midnight Noir</h3>
+                <p>Our most exclusive, elite offering. A customized, long-form experience for the refined seeker who desires total immersion.</p>
+            </div>
+        </div>
+
+        <div class="mood-box">
+            <h2 style="color: var(--gold);">Choose Your Vibe</h2>
+            <p>Whether you seek a quiet escape from Silicon Valley or an adventurous afternoon in the city, the journey is yours to define.</p>
+        </div>
     </div>
 
-    <div class="card">
-        <h2>Client Inquiries</h2>
-        <p>Bespoke therapeutic massage delivered by licensed professionals. All sessions are strictly professional and require prior verification.</p>
-        <ul class="benefits">
-            <li>🔹 Certified & Background-Checked Staff</li>
-            <li>🔹 Clinical Excellence & Performance Recovery</li>
-            <li>🔹 Identity Verification Required for All New Clients</li>
-        </ul>
-        <a href="https://wa.me/415-215-8598?text=I'd%20like%20to%20request%20a%20professional%20session%20with%20TsAshlyAndrews" class="cta-button">Request a Professional Session</a>
-    </div>
-</div>
-
-<footer>
-    &copy; 2026 TsAshlyAndrews Agency. <br>
-    Providing a safe, professional workspace for therapeutic excellence.
-</footer>
+    <footer id="booking">
+        <p>Discretion Assured. Elite Clientele Only.</p>
+        <p>San Francisco • Oakland • San Jose</p>
+        <p>&copy; 2026 The SF Sanctuary</p>
+    </footer>
 
 </body>
 </html>
-
